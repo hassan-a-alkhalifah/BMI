@@ -12,23 +12,23 @@
       <h2>How much do you weigh?</h2>
       <form action="index.html" method="post">
         Weight: <input id="weight" type="number" name="weight" min="1" max="1000"></input>
-        <input id="kilo" type="radio" name="" value="">Kilograms</input>
-        <input type="radio" name="" value="">Pounds</input>
+        <input id="kilo" type="radio" name="weight" value="">Kilograms</input>
+        <input type="radio" name="weight" value="">Pounds</input>
 
 
       </form>
       <h2>How tall are you?</h2>
       <form action="index.html" method="post">
-        Height: <input id="height" type="number" name="" min="1" max="1000" value="98"></input>
-        <input id="cent" type="radio" name="" value="">Centimeters</input>
+        Height: <input id="height" type="number" name="height" min="1" max="1000" value=""></input>
+        <input id="cent" type="radio" name="height" value="">Centimeters</input>
         <input type="radio" name="" value="95">Inches</input>
       </form>
       <br>
-      <input onclick="getWeightData(); getHeightData; bmi()" type="submit" name="submit" value="submit">
+      <input onclick="run()" type="submit" name="submit" value="submit">
     </div>
     <div>
       <h2>Your BMI is: </h2>
-      <p id="result"></p>
+      <p id="result">Your answer here</p>
     </div>
 
   </body>
