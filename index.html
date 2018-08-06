@@ -7,29 +7,46 @@
     <script type="text/javascript" src="js/scripts.js"></script>
   </head>
   <body>
-    <h1>Body Mass Index Calculator</h1>
-    <div class="mainbox">
-      <h2>How much do you weigh?</h2>
-      <form action="index.html" method="post">
-        Weight: <input id="weight" type="number" name="weight" min="1" max="1000"></input>
-        <input id="kilo" type="radio" name="weight" value="">Kilograms</input>
-        <input type="radio" name="weight" value="">Pounds</input>
 
 
-      </form>
-      <h2>How tall are you?</h2>
-      <form action="index.html" method="post">
-        Height: <input id="height" type="number" name="height" min="1" max="1000" value=""></input>
-        <input id="cent" type="radio" name="height" value="">Centimeters</input>
-        <input type="radio" name="" value="95">Inches</input>
-      </form>
-      <br>
-      <input onclick="run()" type="submit" name="submit" value="submit">
+
+      <div class="mainbox">
+        <h1>Body Mass Index Calculator</h1>
+        <hr>
+
+        <h2>How much do you weigh?</h2>
+
+        <form action="index.html" method="post">
+          Weight: <input id="weight" type="number" name="weight" min="1" max="1000"></input>
+          <input id="kilo" type="radio" name="weight" value="" required>Kilograms</input>
+          <input type="radio" name="weight" value="" required>Pounds</input>
+        </form>
+
+        <h2>How tall are you?</h2>
+
+        <form action="index.html" method="post">
+          Height: <input id="height" type="number" name="height" min="1" max="1000" value=""></input>
+          <input id="cent" type="radio" name="height" value="" required>Centimeters</input>
+          <input type="radio" name="height" value="95" required>Inches</input>
+        </form>
+
+        <input onclick="run()" type="submit" name="submit" value="Submit" id="submit">
+
+        <div class="answerbox">
+          <div>
+            <h2>Your BMI is: </h2>
+            <p id="result"></p>
+          </div>
+
+          <div>
+            <h2>What does this mean?</h2>
+            <p id="explanation"></p>
+          </div>
+        </div>
+
     </div>
-    <div>
-      <h2>Your BMI is: </h2>
-      <p id="result">Your answer here</p>
-    </div>
+
+
 
   </body>
 </html>
